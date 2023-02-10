@@ -1,0 +1,6 @@
+<mediaviewer-viewer
+    media-selector-url="<?php echo $this->url('site/mediaviewer/viewer', ['action' => 'media-selector'], ['query' => ['item_id' => $item->id()]], true); ?>"
+    js-dependencies-url="<?php echo $this->url('site/mediaviewer/viewer', ['action' => 'js-dependencies'], [], true); ?>"
+>
+    <span slot="title"><?php echo $this->escapeHtml($item->displayTitle()); ?></span>
+</mediaviewer-viewer>

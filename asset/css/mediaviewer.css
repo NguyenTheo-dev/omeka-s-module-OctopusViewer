@@ -1,4 +1,4 @@
-.mediaviewer {
+.mediaviewer-viewer {
     --mediaviewer-font-size: 14px;
     --mediaviewer-line-height: 1.3;
     --mediaviewer-border-color: #e0e0e0;
@@ -104,6 +104,13 @@
     margin-bottom: 1em;
 }
 
+.mediaviewer-media-info .property dt {
+    font-weight: bold;
+}
+.mediaviewer-media-info .property dd {
+    margin-left: 0;
+}
+
 .mediaviewer-media-view {
     background-color: #f0f0f0;
     flex-grow: 1;
@@ -125,4 +132,13 @@
 .mediaviewer-media-view .media-render video {
     height: 100%;
     width: 100%;
+}
+
+.mediaviewer-icon-fullscreen {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    background-image: url(../image/fullscreen.png);
+    width: 16px;
+    height: 16px;
 }
